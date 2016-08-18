@@ -6,9 +6,9 @@ public class substring {
 
 public static void main(String[] args) {
 
-    String s,y,z;
+ 
+	String s,y;
 
-    //char c = 'm';
     Scanner in = new Scanner(System.in);
     s= in.next();
     int x = s.length();
@@ -24,17 +24,17 @@ public static void main(String[] args) {
             str[k]=s.substring(i,j);
             System.out.println(str[k]);
             k++;
+            }
         }
-    }
-
-
     Arrays.sort(str);
     System.out.println("Substrings in alphabatical order :");
     for(int j=0;j<k;j++)
     {
-        System.out.println(str[j]);
+        System.out.print(str[j] +" ");
     }
-    System.out.println(" Greatest  Lexicographical String is"+ str[k-1]);
+    System.out.println(" Greatest  Lexicographical String is "+ str[k-1]);
+    }
+
+	
 }
 
-}
